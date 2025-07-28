@@ -17,7 +17,7 @@ public class HomePage extends BasePage {
 	@FindBy(xpath ="//span[normalize-space()='My Account']") WebElement likMyAccount;
 	@FindBy(xpath ="//a[normalize-space()='Register']") WebElement lnkRegister;
 	@FindBy(linkText ="Login") WebElement lnkLogin; // Login link added in steps
-	
+	@FindBy(xpath ="//*[@id=\"top-links\"]/ul/li[5]/a/span") WebElement btn_checkout;
 	public void clickMyAccount() {
 		likMyAccount.click();
 	}
@@ -29,5 +29,9 @@ public class HomePage extends BasePage {
 	public void clickLogin()    
 	{
 		lnkLogin.click();
+	}
+	
+	public void clickcheckout() {
+		btn_checkout.click();
 	}
 }
