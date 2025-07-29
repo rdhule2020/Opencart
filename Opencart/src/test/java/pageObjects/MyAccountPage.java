@@ -26,6 +26,7 @@ public class MyAccountPage extends BasePage {
 	@FindBy(xpath = "//input[@id='input-search']") WebElement txtbox_search1;
 	//result page
 	@FindBy(xpath ="//p[contains(text(),'There is no product that matches the search criter')]")WebElement resultmsg;
+	@FindBy (xpath ="//a[normalize-space()='Address Book']") WebElement btn_AddressBook;
 	
 	public boolean isMyAccountPageExists() {
 		try {
@@ -69,5 +70,9 @@ public class MyAccountPage extends BasePage {
 	
 	public String getresultmsg() {
 		return resultmsg.getText();
+	}
+	
+	public void clickAddressbook() {
+		btn_AddressBook.click();
 	}
 }
