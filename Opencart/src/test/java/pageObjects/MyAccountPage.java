@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+
 public class MyAccountPage extends BasePage {
 
 	public MyAccountPage(WebDriver driver) {
@@ -18,7 +19,13 @@ public class MyAccountPage extends BasePage {
 	// btnMyAccount;
 	@FindBy(xpath = "//a[normalize-space()='Edit your account information']")WebElement editAccInfo;
 	
-	
+	//search
+	@FindBy(xpath = "//input[@placeholder='Search']") WebElement txtbox_search;
+	@FindBy(xpath = "//button[@class='btn btn-default btn-lg']")WebElement btn_search;
+	//search criteria
+	@FindBy(xpath = "//input[@id='input-search']") WebElement txtbox_search1;
+	//result page
+	@FindBy(xpath ="//p[contains(text(),'There is no product that matches the search criter')]")WebElement resultmsg;
 	
 	public boolean isMyAccountPageExists() {
 		try {
@@ -43,5 +50,24 @@ public class MyAccountPage extends BasePage {
 	public void clickeditAccInfo() 
 	{
 		editAccInfo.click();
+	}
+	
+	public void send_search(String value) {
+		txtbox_search.sendKeys(value);
+	}
+	
+	public void clicksearch() {
+		btn_search.click();
+	}
+	
+	public String getText_txtbox_search1() {
+		return txtbox_search1.getText();
+	}
+	public void clicksearch1() {
+		txtbox_search1.click();
+	}
+	
+	public String getresultmsg() {
+		return resultmsg.getText();
 	}
 }

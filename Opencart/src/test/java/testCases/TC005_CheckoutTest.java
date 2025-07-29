@@ -15,7 +15,7 @@ public class TC005_CheckoutTest extends BaseClass {
 		
 		public void Verify_checkoutonHomePage()
 		{
-			
+			logger.info("*****Starting TC005_CheckoutTests*****");
 			try {
 			HomePage h=new HomePage(driver);
 			h.clickcheckout();
@@ -26,15 +26,20 @@ public class TC005_CheckoutTest extends BaseClass {
 			{
 				ch.clickcontinue();
 			}
-			
+			logger.info("***** Adding product to cart ****");
 			h.clickmac_Addtocart();
-			if(h.getsuccescartmsg().equals(" Success: You have added MacBook to your shopping cart!"))
-			{
-				h.clickshoppingcart();
-			}
+			h.getsuccescartmsg();
+		
+	//Assert.assertEquals(successmsg, "Success: You have added MacBook to your shopping cart!");
+			logger.info("*****Clicking on Shopping cart*****");
+			h.clickshoppingcart();
+			logger.info("***** Clicking on remove product *****");
+			h.clickremove();
+			
 			
 		}catch(Exception e) {
 			Assert.fail();
 		}
+			logger.info("*****Ending TC005_CheckoutTests*****");
 	}
 }

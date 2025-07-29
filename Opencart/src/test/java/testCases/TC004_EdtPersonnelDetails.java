@@ -13,7 +13,7 @@ public class TC004_EdtPersonnelDetails extends BaseClass {
 
 	@Test(groups = { "Sanity" })
 	public void EditAccoutInformation() {
-
+		logger.info("*****Starting TC004_EdtPersonnelDetails*****");
 		try {
 			HomePage h = new HomePage(driver);
 			h.clickMyAccount();
@@ -28,6 +28,7 @@ public class TC004_EdtPersonnelDetails extends BaseClass {
 			m.clickeditAccInfo();
 
 			MyAccountInformationPage mip = new MyAccountInformationPage(driver);
+			logger.info("***** Altering information *****");
 			mip.clearfirstName();
 			mip.setfirstName(p.getProperty("fname"));
 			mip.getlname();
@@ -43,6 +44,7 @@ public class TC004_EdtPersonnelDetails extends BaseClass {
 		} catch (Exception e) {
 			Assert.fail();
 		}
+		logger.info("*****Ending TC004_EdtPersonnelDetails*****");
 	}
 
 }

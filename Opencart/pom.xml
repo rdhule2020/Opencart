@@ -5,7 +5,7 @@
 	<groupId>Opencart</groupId>
 	<artifactId>Opencart</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
+
 	<build>
 		<pluginManagement>
 
@@ -22,8 +22,8 @@
 					<version>3.5.3</version>
 					<configuration>
 						<suiteXmlFiles>
-							 <suiteXmlFile>master.xml</suiteXmlFile>
-							<suiteXmlFile>grouping.xml</suiteXmlFile>
+							<suiteXmlFile>master.xml</suiteXmlFile>
+							<!-- <suiteXmlFile>grouping.xml</suiteXmlFile> -->
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>

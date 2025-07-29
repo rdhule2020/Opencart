@@ -1,100 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-29T12:32:34 IST" name="Suite" finished-at="2025-07-29T12:32:34 IST" duration-ms="195">
+  <suite started-at="2025-07-29T15:31:24 IST" name="Suite" finished-at="2025-07-29T15:31:44 IST" duration-ms="19799">
     <groups>
-      <group name="Sanity">
-        <method signature="TC004_EdtPersonnelDetails.EditAccoutInformation()[pri:0, instance:testCases.TC004_EdtPersonnelDetails@5e81e5ac]" name="EditAccoutInformation" class="testCases.TC004_EdtPersonnelDetails"/>
-      </group> <!-- Sanity -->
+      <group name="Master">
+        <method signature="TC005_CheckoutTest.Verify_checkoutonHomePage()[pri:0, instance:testCases.TC005_CheckoutTest@6f0b0a5e]" name="Verify_checkoutonHomePage" class="testCases.TC005_CheckoutTest"/>
+      </group> <!-- Master -->
     </groups>
-    <test started-at="2025-07-29T12:32:34 IST" name="Test" finished-at="2025-07-29T12:32:34 IST" duration-ms="195">
-      <class name="testCases.TC004_EdtPersonnelDetails">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC004_EdtPersonnelDetails@5e81e5ac]" started-at="2025-07-29T12:32:34 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1753772554389" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'OS' is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\RAHUL\git\repository2\Opencart\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'OS' is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\RAHUL\git\repository2\Opencart\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test started-at="2025-07-29T15:31:24 IST" name="Test" finished-at="2025-07-29T15:31:44 IST" duration-ms="19799">
+      <class name="testCases.TC005_CheckoutTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC005_CheckoutTest@6f0b0a5e]" started-at="2025-07-29T15:31:25 IST" name="setup" finished-at="2025-07-29T15:31:36 IST" duration-ms="10930" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="EditAccoutInformation()[pri:0, instance:testCases.TC004_EdtPersonnelDetails@5e81e5ac]" started-at="2025-07-29T12:32:34 IST" name="EditAccoutInformation" finished-at="2025-07-29T12:32:34 IST" duration-ms="1" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'OS' is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\RAHUL\git\repository2\Opencart\testng.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'OS' is required by BeforeClass on method setup but has not been marked @Optional or defined
-in C:\Users\RAHUL\git\repository2\Opencart\testng.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="Verify_checkoutonHomePage()[pri:0, instance:testCases.TC005_CheckoutTest@6f0b0a5e]" started-at="2025-07-29T15:31:36 IST" name="Verify_checkoutonHomePage" finished-at="2025-07-29T15:31:44 IST" duration-ms="7839" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EditAccoutInformation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC004_EdtPersonnelDetails@5e81e5ac]" started-at="2025-07-29T12:32:34 IST" name="tearDown" finished-at="2025-07-29T12:32:34 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- Verify_checkoutonHomePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC005_CheckoutTest@6f0b0a5e]" started-at="2025-07-29T15:31:44 IST" name="tearDown" finished-at="2025-07-29T15:31:44 IST" duration-ms="475" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC004_EdtPersonnelDetails -->
+      </class> <!-- testCases.TC005_CheckoutTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
