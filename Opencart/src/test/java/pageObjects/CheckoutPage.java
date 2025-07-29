@@ -6,8 +6,11 @@ import org.openqa.selenium.support.FindBy;
 
 public class CheckoutPage extends BasePage {
 
-	public CheckoutPage(WebDriver driver) {
+	public CheckoutPage(WebDriver driver) 
+	{
+		
 		super(driver);
+	
 	}
 
 	@FindBy(xpath = "//*[@id=\"content\"]/p")
