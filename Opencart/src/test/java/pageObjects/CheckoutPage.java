@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class CheckoutPage extends BasePage {
 
-	CheckoutPage(WebDriver driver) {
+	public CheckoutPage(WebDriver driver) {
 		super(driver);
 	}
 
