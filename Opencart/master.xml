@@ -15,6 +15,7 @@
 			<class name="testCases.TC005_CheckoutTest" />
 			<class name="testCases.TC006_SearchTest" />
 			<class name="testCases.TC007_AddressBookTest" />
+			<class name="testCases.TC008_EditAddressBook"/>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

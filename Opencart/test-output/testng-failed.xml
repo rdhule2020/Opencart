@@ -8,13 +8,13 @@
     <parameter name="OS" value="Windows"/>
     <parameter name="Browser" value="Edge"/>
     <classes>
-      <class name="testCases.TC007_AddressBookTest">
+      <class name="testCases.TC008_EditAddressBook">
         <methods>
           <include name="tearDown"/>
-          <include name="verifyAddressBookPage"/>
           <include name="setup"/>
+          <include name="EditAddressBook"/>
         </methods>
-      </class> <!-- testCases.TC007_AddressBookTest -->
+      </class> <!-- testCases.TC008_EditAddressBook -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
