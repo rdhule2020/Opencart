@@ -29,15 +29,21 @@ public class BaseClass {
 	public static WebDriver driver;
 	public Logger logger; //Log4j
 	public Properties p;
+	public Properties p1;
+	
 	
 	@BeforeClass(groups= {"Sanity","Regression","Master"})
 	@Parameters({"OS","Browser"})
 	public void setup(String OS, String br  ) throws IOException 
 	{
 	 //loading config.properties file
-	FileReader file = new FileReader("./src/test/resources//config.properties");	
+	FileReader file = new FileReader("./src/test/resources//config.properties");
+	FileReader file1 = new FileReader("./src/test/resources//config1.properties");
 		p = new Properties();
 		p.load(file);
+		
+		p1 = new Properties();
+		p1.load(file1);
 
 	//Logger log4j	
 	logger = LogManager.getLogger(this.getClass());

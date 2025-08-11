@@ -8,13 +8,13 @@
     <parameter name="OS" value="Windows"/>
     <parameter name="Browser" value="Edge"/>
     <classes>
-      <class name="testCases.TC008_EditAddressBook">
+      <class name="testCases.TC009_MP3PlayerAddToCartTest">
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="EditAddressBook"/>
+          <include name="verify_MP3PlayerAddToCartFeature"/>
         </methods>
-      </class> <!-- testCases.TC008_EditAddressBook -->
+      </class> <!-- testCases.TC009_MP3PlayerAddToCartTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

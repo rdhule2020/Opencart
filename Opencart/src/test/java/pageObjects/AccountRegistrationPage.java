@@ -32,6 +32,9 @@ public class AccountRegistrationPage extends BasePage {
 	public void setFirstName(String fname) {
 		txtFirstName.sendKeys(fname);
 	}
+//	public void setTxtFirstName(WebElement txtFirstName) {
+//		this.txtFirstName = txtFirstName;
+//	}
 
 	public void setLastName(String lname) {
 		txtLastName.sendKeys(lname);

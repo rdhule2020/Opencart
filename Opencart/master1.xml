@@ -8,8 +8,9 @@
 		<parameter name="OS" value="Windows" />
 		<parameter name="Browser" value="Edge" />
 		<classes>
-			<class name="testCases.TC007_AddressBookTest" />
-			<class name="testCases.TC008_EditAddressBook"/>
+			<!--<class name="testCases.TC007_AddressBookTest" />  -->
+			<!-- <class name="testCases.TC008_EditAddressBook"/>  -->
+			<class name="testCases.TC009_MP3PlayerAddToCartTest"/>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

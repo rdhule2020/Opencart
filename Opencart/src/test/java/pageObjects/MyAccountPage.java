@@ -28,6 +28,11 @@ public class MyAccountPage extends BasePage {
 	@FindBy(xpath ="//p[contains(text(),'There is no product that matches the search criter')]")WebElement resultmsg;
 	@FindBy (xpath ="//a[normalize-space()='Address Book']") WebElement btn_AddressBook;
 	
+	@FindBy(xpath ="//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='My Account']")WebElement option_MyAccount;
+	@FindBy(xpath ="//a[normalize-space()='MP3 Players']")WebElement header_MP3;
+	@FindBy(xpath ="//a[normalize-space()='Show AllMP3 Players']")WebElement btn_showAllMp3Player;
+	
+	
 	public boolean isMyAccountPageExists() {
 		try {
 			boolean status = msgHeading.isDisplayed();
@@ -39,11 +44,9 @@ public class MyAccountPage extends BasePage {
 
 	}
 
-//	 public void clickMyAccount()
-//	 {
-//		 btnMyAccount.click();
-//	 }
-//	 
+	
+	
+	 
 	public void clickLogout() {
 		btnlogout.click();
 	}
@@ -75,4 +78,20 @@ public class MyAccountPage extends BasePage {
 	public void clickAddressbook() {
 		btn_AddressBook.click();
 	}
+	
+	//For navigating to  MP3 Page
+	 public void clickOptionMyAccount()
+	 {
+		 option_MyAccount.click();
+	 }
+	 
+	 public void clickheader_MP3()
+	 {
+		 header_MP3.click();
+	 }
+	
+	 public void clickbtn_showAllMp3Player()
+	 {
+		 btn_showAllMp3Player.click();
+	 }
 }
