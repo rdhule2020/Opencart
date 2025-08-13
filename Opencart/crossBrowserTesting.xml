@@ -14,7 +14,7 @@
 			<class name="testCases.TC001_AccountRegistrationTest" />
 		</classes>
 	</test> <!-- Test -->
-
+ 
 
 	<test name="edgeTest">
 		<parameter name="OS" value="Windows" />

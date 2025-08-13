@@ -32,6 +32,28 @@ public class DataProviders {
 	}
 	
 	//DataProvider 2
+	@DataProvider(name="Login")
+	public String [][] getLoginData() throws IOException
+	{
+		String path1 = ".\\testData\\Opencart_LoginData.xlsx";
+	
+		ExcelUtility ex = new ExcelUtility(path1);
+		
+		int totalrows = ex.getRowCount("Sheet2");
+		int totalcolmns = ex.getCellCount("Sheet2", 1);
+		
+		String loginData[][]= new String[totalrows][totalcolmns];
+		for(int i=1; i<=totalrows; i++)
+		{
+			for(int j=0;j<totalcolmns;j++)
+			{
+				loginData[i-1][j]= ex.getCellData("Sheet2", i, j);
+			}
+		}
+		
+		return loginData;
+		
+	}
 	
 	//DataProvider 3
 	
