@@ -3,12 +3,14 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends BasePage{
 	
 		public LoginPage(WebDriver driver)
 		{
 			super(driver);
+			//PageFactory.initElements(driver, this);
 		}
 		
 		@FindBy(xpath = "//input[@placeholder='E-Mail Address']") WebElement txtEmailAddress;
@@ -30,4 +32,11 @@ public class LoginPage extends BasePage{
 		{
 			btnLogin.click();
 		}
+		
+//		public void login(String username, String password)
+//		{
+//			enterText(txtEmailAddress,username );
+//			enterText(txtPassword,password);
+//			clickElement(btnLogin);
+//		}
 }

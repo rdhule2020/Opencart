@@ -56,7 +56,7 @@ public class BaseClass {
 	default : System.out.println("Invalid browser name..."); return;
 	}
 	
-	 driver = new EdgeDriver();	
+	// driver = new EdgeDriver();	
 	 driver.manage().deleteAllCookies();
 	 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 	 driver.get(p.getProperty("appURL"));

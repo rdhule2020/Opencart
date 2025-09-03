@@ -111,5 +111,16 @@
 			<artifactId>commons-email</artifactId>
 			<version>1.6.0</version>
 		</dependency>
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-testng</artifactId>
+			<version>2.29.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>Framework1</groupId>
+			<artifactId>Framework1</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>
