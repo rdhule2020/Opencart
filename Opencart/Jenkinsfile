@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'master', url: 'https://github.com/rdhule2020/Opencart/blob/master/Opencart/Jenkinsfile'
+                git branch: 'master', url: 'https://github.com/rdhule2020/Opencart'
             }
         }
 
