@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven3'
-        jdk 'Java17'
+        maven 'MyMaven'  // Make sure this matches the name configured in Jenkins
+        jdk 'MyJava'     // Same here
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/rdhule2020/Opencart.git'
+                git branch: 'master', url: 'https://github.com/rdhule2020/Opencart'
             }
         }
 
