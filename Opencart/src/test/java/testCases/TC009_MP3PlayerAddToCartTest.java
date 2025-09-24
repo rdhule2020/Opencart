@@ -70,6 +70,6 @@ public class TC009_MP3PlayerAddToCartTest extends BaseClass{
 			Assert.fail();
 		}
 		
-		logger.info("**** TC009_MP3PlayerAddToCartTest executed successfully ****");
+		logger.info("****TC009_MP3PlayerAddToCartTest executed successfully****");
 	}
 }
