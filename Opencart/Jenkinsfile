@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'MyMaven'  // Make sure this matches the name configured in Jenkins
-        jdk 'MyJava'     // Same here
+        maven 'MyMaven'
+        jdk 'MyJava'
     }
 
     stages {
@@ -15,26 +15,26 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'mvn clean install -DskipTests'
+                sh 'cd Opencart && mvn clean install -DskipTests'
             }
         }
 
         stage('Run Automation Test') {
             steps {
-                sh 'mvn test'
+                sh 'cd Opencart && mvn test'
             }
         }
 
         stage('Publish Test Report') {
             steps {
-                junit 'target/surefire-reports/*.xml'
+                junit 'Opencart/target/surefire-reports/*.xml'
             }
         }
     }
 
     post {
         always {
-            archiveArtifacts artifacts: 'target/surefire-reports/*.xml', allowEmptyArchive: true
+            archiveArtifacts artifacts: 'Opencart/target/surefire-reports/*.xml', allowEmptyArchive: true
         }
     }
 }
