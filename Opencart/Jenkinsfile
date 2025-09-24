@@ -1,40 +1,40 @@
 pipeline {
     agent any
-    tools{
+
+    tools {
         maven 'Maven3'
         jdk 'Java17'
     }
-stages{
-    stage('Checkout Code') {
-        steps {
-            git branch: 'main', url: 'https://github.com/rdhule2020/Opencart.git
-        }
-    }
-    
+
     stages {
+        stage('Checkout Code') {
+            steps {
+                git branch: 'main', url: 'https://github.com/rdhule2020/Opencart.git'
+            }
+        }
+
         stage('Build') {
             steps {
                 sh 'mvn clean install -DskipTests'
             }
         }
-            
+
         stage('Run Automation Test') {
             steps {
-               sh 'mvn test'
+                sh 'mvn test'
             }
         }
+
         stage('Publish Test Report') {
             steps {
-               TestNG 'target/surefire-reports/*.xml'
+                junit 'target/surefire-reports/*.xml'
             }
         }
     }
 
-    post
-    {
+    post {
         always {
-            archiveArtifacts artifacts: 'target-reports/*.xml''
-            allowEmptyArchive: true
-}
+            archiveArtifacts artifacts: 'target/surefire-reports/*.xml', allowEmptyArchive: true
+        }
     }
 }
